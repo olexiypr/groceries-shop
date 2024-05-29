@@ -1,0 +1,29 @@
+@import '../../../../styles/main/colors.scss';
+
+.card {
+  display: flex;
+  gap: 2rem;
+  &__img {
+    background-color: $color-white;
+    border-radius: 20px;
+    min-width: 10rem;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &--disabled {
+      display: none;
+    }
+    img {
+      width: 46px;
+      height: 46px;
+    }
+  }
+  &__desc {
+    &-heading {
+      font-size: 2.5rem;
+      line-height: 2.9rem;
+      margin-bottom: 0.7rem;
+    }
+  }
+}

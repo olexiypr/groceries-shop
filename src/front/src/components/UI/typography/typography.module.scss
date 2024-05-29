@@ -1,0 +1,25 @@
+@import '../../../styles/main/colors.scss';
+
+.paragraph {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 165.4%;
+  color: $color-paragraph-gray;
+}
+
+.subheading {
+  font-family: 'Yellowtail';
+  font-weight: 400;
+  font-size: 3.6rem;
+  line-height: 4.9rem;
+  color: $color-primary-green;
+}
+
+.heading {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 800;
+  font-size: 5rem;
+  line-height: 5.9rem;
+  color: $color-primary-blue;
+}

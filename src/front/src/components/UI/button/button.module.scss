@@ -1,0 +1,47 @@
+@import '../../../styles/main/colors.scss';
+
+.button {
+  border-radius: 1.6rem;
+  padding: 2.8rem 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  font-family: 'Roboto', sans-serif;
+  color: $color-white;
+  font-size: 2rem;
+  font-weight: 700;
+  background-color: $color-primary-blue;
+  width: fit-content;
+  transition: box-shadow 0.3s ease;
+  &:hover {
+    background-color: #2f5463;
+  }
+  &-yllw {
+    background-color: $color-primary-yellow;
+    color: $color-primary-blue;
+    &:hover {
+      background-color: #eddb7a;
+    }
+  }
+  &-wht {
+    background-color: $color-white;
+    color: $color-primary-blue;
+    &:hover {
+      background-color: $color-white;
+      box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
+    }
+  }
+  &-arrow {
+    display: block;
+    &--hidden {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 59em) {
+  .button {
+    padding: 2rem 2rem;
+  }
+}

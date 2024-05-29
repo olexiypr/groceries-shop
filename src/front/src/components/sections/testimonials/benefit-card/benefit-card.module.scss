@@ -1,0 +1,25 @@
+@import '../../../../styles/main/colors.scss';
+
+.benefits__card {
+  position: relative;
+  border-radius: 50%;
+  border: 4px solid $color-primary-green;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 19rem;
+  height: 19rem;
+  &-paragraph {
+    font-weight: 600;
+  }
+  &::before {
+    content: '';
+    width: 16.7rem;
+    height: 16.7rem;
+    position: absolute;
+    background: #f1f1f1;
+    border-radius: 50%;
+    z-index: -1;
+  }
+}

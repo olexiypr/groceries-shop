@@ -1,0 +1,74 @@
+@import '../../../../styles/main/colors.scss';
+
+.product {
+  display: flex;
+  flex-direction: column;
+  height: 48rem;
+  padding: 3rem 0;
+  border-radius: 30px;
+  background-color: $color-background-light-gray;
+  &:hover {
+    cursor: pointer;
+  }
+  &-tag {
+    font-weight: 600;
+    font-size: 1.6rem;
+    padding: 0.6rem 1.2rem;
+    border-radius: 8px;
+    line-height: 2rem;
+    margin-left: 3rem;
+  }
+
+  &-img {
+    width: 100%;
+    height: 100%;
+  }
+  &__description {
+    padding: 0 3rem;
+    &-heading {
+      font-family: 'Roboto', sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 2.4rem;
+      line-height: 23px;
+      color: #274c5b;
+      margin-bottom: 1.6rem;
+      text-align: left;
+    }
+
+    &-separator {
+      width: 100%;
+      border: 1px solid #000;
+      opacity: 0.1;
+      margin-bottom: 1rem;
+    }
+
+    &__parameters {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+}
+
+.price {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: #274c5b;
+}
+
+.discount {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+  color: #b8b8b8;
+  text-decoration: line-through;
+  margin-right: 0.5rem;
+}
+
+.rate {
+  height: 1.8rem;
+  width: auto;
+}

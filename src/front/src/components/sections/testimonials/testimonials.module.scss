@@ -1,0 +1,52 @@
+@import '../../../styles/main/colors.scss';
+
+.testimonials {
+  padding-top: 16.4rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 16.4rem;
+  & > img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+  &-bg--left {
+    left: 0;
+  }
+  &-bg--right {
+    right: 0;
+    transform: rotate(180deg);
+  }
+  &-subheading {
+    margin-bottom: 0.8rem;
+  }
+
+  &-separate {
+    border-top: 1px solid #bbb;
+    max-width: 110rem;
+    margin: 11rem auto;
+  }
+
+  .benefits {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 3rem;
+    place-items: center;
+    justify-content: center;
+    max-width: 110rem;
+  }
+}
+
+@media (max-width: 75em) {
+  .testimonials > img {
+    display: none;
+  }
+}
+
+@media (max-width: 44em) {
+  .testimonials .benefits {
+    grid-template-columns: 1fr 1fr;
+  }
+}

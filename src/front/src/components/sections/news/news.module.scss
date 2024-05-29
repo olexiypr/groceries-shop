@@ -1,0 +1,33 @@
+@import '../../../styles/main/colors.scss';
+
+.news {
+  &__header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 4.5rem;
+    gap: 5rem;
+    &-subheading {
+      margin-bottom: 0.8;
+    }
+    &-heading {
+      max-width: 70rem;
+    }
+    &-button {
+      border: 1px solid $color-primary-blue;
+      align-self: flex-end;
+    }
+  }
+  &__banners {
+    margin-bottom: 25rem;
+    display: flex;
+    gap: 5rem;
+    flex-wrap: wrap;
+    &--1 {
+      background-image: url('../../../img/news-banner--1.png');
+    }
+    &--2 {
+      background-image: url('../../../img/news-banner--2.png');
+    }
+  }
+}

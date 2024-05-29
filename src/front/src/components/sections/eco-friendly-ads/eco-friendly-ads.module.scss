@@ -1,0 +1,11 @@
+@import '../../../styles/main/colors.scss';
+
+.banners {
+  padding-top: 19rem;
+  padding-bottom: 19rem;
+  background-color: $color-primary-green-tint;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5rem;
+}

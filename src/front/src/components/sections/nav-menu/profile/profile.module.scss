@@ -1,0 +1,50 @@
+@import '../../../../styles/main/colors.scss';
+
+.greetings {
+  font-size: 2rem;
+}
+.profileContainer {
+  height: 56px;
+  min-width: 10rem;
+  position: relative;
+}
+
+.profileDropdown {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  cursor: pointer;
+  border-radius: 10px;
+  border: 1px solid $color-primary-blue;
+  // display: inline-block;
+}
+
+.greetings {
+  font-size: 2rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.dropdownContent {
+  position: absolute;
+  top: 105%;
+  left: 0;
+  z-index: 100;
+  min-width: 10rem;
+  // background-color: #f0f0f0;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  // border-radius: 4px;
+  padding: 8px;
+  display: flex;
+  justify-content: center;
+}
+
+.dropdownContent button {
+  font-size: 1.4rem;
+  padding: 1rem 2rem;
+  width: 100%;
+}

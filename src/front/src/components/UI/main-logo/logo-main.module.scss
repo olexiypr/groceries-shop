@@ -1,0 +1,14 @@
+@import '../../../styles/global.scss';
+
+.logo {
+  z-index: 101;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  cursor: pointer;
+  .logo-heading {
+    font-weight: 700;
+    font-size: 3.8rem;
+    line-height: 4.5rem;
+  }
+}

@@ -1,0 +1,9 @@
+@import '../../../styles/main/colors.scss';
+
+.banners {
+  display: flex;
+  gap: 3.6rem;
+  margin-bottom: 19rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}

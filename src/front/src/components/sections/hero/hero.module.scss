@@ -1,0 +1,42 @@
+@import '../../../styles/main/colors.scss';
+
+.hero {
+  position: relative;
+  z-index: 10;
+  height: 85vh;
+  background-image: url('../../../img/hero-background.png');
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 14.5rem;
+  overflow: hidden;
+  &-heading {
+    font-size: 7rem;
+    max-width: 53rem;
+    margin-bottom: 2.3rem;
+  }
+  &__content {
+    width: 100%;
+    &-subheading {
+      margin-bottom: 0.8rem;
+    }
+  }
+  &__decores {
+    position: absolute;
+    width: 100%;
+    inset: 0;
+    top: -5rem;
+    z-index: -1;
+  }
+}
+@media (max-width: 44em) {
+  .hero {
+    background-image: none;
+    background-color: $color-background-light-gray;
+    &-heading {
+      font-size: 5rem;
+    }
+  }
+}

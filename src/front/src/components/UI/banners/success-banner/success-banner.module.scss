@@ -1,0 +1,9 @@
+.success__banner {
+  background-image: url('../../../../img/success-banner.jpg');
+  background-position: center;
+  margin-top: 10rem;
+  &-heading {
+    align-self: flex-start;
+    transform: translateY(-8rem);
+  }
+}

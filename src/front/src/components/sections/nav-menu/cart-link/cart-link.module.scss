@@ -1,0 +1,47 @@
+@import '../../../../styles/main/colors.scss';
+
+.cart {
+  display: flex;
+  gap: 1.2rem;
+  align-items: center;
+  border: 1px solid #e0e0e0;
+  border-radius: 33px;
+  padding: 0.5rem 2.3rem 0.5rem 0.6rem;
+  background-color: $color-white;
+  &-text {
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 2.1rem;
+  }
+  &-btn {
+    background-color: $color-primary-blue;
+    position: relative;
+  }
+  &-popup {
+    position: absolute;
+    bottom: -18%;
+    right: -18%;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    background-color: red;
+    color: $color-white;
+    font-size: 1.2rem;
+    height: 30px;
+    width: 30px;
+    display: none;
+  }
+}
+
+@media (max-width: 59em) {
+  .cart {
+    border-color: transparent;
+    padding: 0;
+    &-text {
+      display: none;
+    }
+    &-popup {
+      display: grid;
+    }
+  }
+}

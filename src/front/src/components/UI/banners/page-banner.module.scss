@@ -1,0 +1,12 @@
+.banner {
+  height: 45rem;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 14rem;
+  &-heading {
+    align-self: center;
+  }
+}

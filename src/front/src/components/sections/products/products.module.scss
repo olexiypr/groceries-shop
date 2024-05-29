@@ -1,0 +1,31 @@
+@import '../../../styles/main/colors.scss';
+
+.categories {
+  position: relative;
+  margin-bottom: 20rem;
+  text-align: center;
+  &-subheading {
+    margin-bottom: 1rem;
+  }
+  &-heading {
+    margin-bottom: 4rem;
+  }
+  &-button {
+    margin: 0 auto;
+  }
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 12rem;
+  }
+  .cart-link {
+    transition: all 0.4s ease-in-out;
+    position: fixed;
+    z-index: 2;
+    bottom: 3rem;
+    right: 3rem;
+    border-color: red;
+  }
+}

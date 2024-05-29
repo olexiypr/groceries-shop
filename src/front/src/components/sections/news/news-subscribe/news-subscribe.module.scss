@@ -1,0 +1,43 @@
+@import '../../../../styles/main/colors.scss';
+
+.subscribe {
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 10rem 7rem;
+  background-image: url('../../../../img/news-subscribe-background.jpg');
+  background-size: cover;
+  background-position: center;
+  &-heading {
+    max-width: 35rem;
+    margin-bottom: 3rem;
+    color: $color-white;
+  }
+  &__submit {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 0.6rem;
+    &-input {
+      padding: 0 17rem 0 2.3rem;
+
+      background: $color-white;
+      border-radius: 16px;
+      font-family: 'Roboto';
+      font-style: italic;
+      font-weight: 400;
+      font-size: 1.8rem;
+      line-height: 2.1rem;
+      color: #ababab;
+    }
+  }
+}
+
+@media (max-width: 44em) {
+  .subscribe__submit-input {
+    width: 100%;
+    height: 66px;
+  }
+}

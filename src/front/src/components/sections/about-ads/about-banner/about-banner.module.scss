@@ -1,0 +1,30 @@
+@import '../../../../styles/main/colors.scss';
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-size: cover;
+  height: 36rem;
+  flex: 1 1 0%;
+  min-width: 45rem;
+  border-radius: 30px;
+  &__text {
+    padding-left: 5.4rem;
+    &-heading {
+      font-size: 4rem;
+      max-width: 27rem;
+      line-height: 4.7rem;
+    }
+  }
+  &--1 {
+    background-image: url('../../../../img/ads-banner1.png');
+    & h2,
+    h3 {
+      color: white;
+    }
+  }
+  &--2 {
+    background-image: url('../../../../img/ads-banner2.png');
+  }
+}

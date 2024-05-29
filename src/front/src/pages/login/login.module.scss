@@ -1,0 +1,36 @@
+@import '../../styles/main/colors.scss';
+
+.form {
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  &__main {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 1fr);
+    gap: 5rem;
+    margin-bottom: 2.5rem;
+  }
+  &-button {
+    margin: 0 auto;
+    margin-top: 3em;
+  }
+  &-title {
+    text-align: center;
+    margin-bottom: 6rem;
+    font-size: 5rem;
+  }
+  .login-link {
+    color: $color-primary-green;
+  }
+}
+@media (max-width: 44em) {
+  .form {
+    &__main {
+      grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+    }
+    &-button {
+      margin-top: 4rem;
+    }
+  }
+}

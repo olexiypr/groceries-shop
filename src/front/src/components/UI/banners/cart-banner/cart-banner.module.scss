@@ -1,0 +1,12 @@
+.cart__banner {
+  background-image: url('../../../../img/cart-banner.png');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+  &-decores {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+  }
+}

@@ -1,0 +1,48 @@
+@import '../../../../styles/main/colors.scss';
+
+.product {
+  display: flex;
+  align-items: center;
+  position: relative;
+  &-img {
+    width: 26rem;
+    height: 26rem;
+  }
+  &-wrapper {
+    margin: 0 auto 0 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    font-weight: 600;
+    font-size: 4rem;
+    line-height: 4.7rem;
+    .product-name {
+      font-weight: 600;
+      font-size: 4rem;
+      line-height: 4.7rem;
+    }
+    .product-price {
+      font-family: 'Roboto', sans-serif;
+      transform: scale(1.4);
+      margin-left: 2rem;
+    }
+  }
+  &-discount {
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 2.8rem;
+    color: #b8b8b8;
+    text-decoration: line-through;
+  }
+  &-remove {
+    margin-left: 2rem;
+    width: 64px;
+    height: 46px;
+  }
+}
+
+@media (max-width: 59em) {
+  .product-img {
+    display: none;
+  }
+}

@@ -1,0 +1,53 @@
+@import '../../../styles/main/colors.scss';
+
+.footer {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  &-container {
+    max-width: 120rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  &-logo-column {
+    align-items: center;
+    text-align: center;
+    max-width: 63rem;
+    padding: 0 4rem;
+    border-left: 1px solid #d5d5d5;
+    border-right: 1px solid #d5d5d5;
+  }
+  &-column--left,
+  &-column--right {
+    .footer-contact {
+      font-weight: 700;
+      font-size: 3rem;
+      line-height: 3.5rem;
+    }
+  }
+  &-column--left {
+    align-items: flex-end;
+  }
+  &-column--right {
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 59em) {
+  .footer {
+    &-container {
+      flex-direction: column-reverse;
+      gap: 3rem;
+      justify-content: center;
+      align-items: center;
+    }
+    &-logo-column {
+      border: 0;
+    }
+    &-column--left {
+      align-items: center;
+    }
+    &-column--right {
+      display: none !important;
+    }
+  }
+}

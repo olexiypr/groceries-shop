@@ -1,0 +1,30 @@
+@import '../../../../styles/main/colors.scss';
+
+.feedback {
+  max-width: 80rem;
+  background-color: $color-white;
+  border-radius: 30px;
+  padding: 5rem;
+  &__person {
+    &-avatar {
+      margin: 0 auto;
+      display: block;
+      border-radius: 50%;
+      margin-bottom: 1rem;
+    }
+    &-rate {
+      margin-bottom: 2.5rem;
+    }
+  }
+  &-paragraph {
+    margin-bottom: 2rem;
+  }
+  .person-name {
+    font-weight: 600;
+    font-size: 2.5rem;
+    line-height: 2.9rem;
+  }
+  .person-role {
+    font-size: 1.5rem;
+  }
+}

@@ -1,0 +1,82 @@
+@import '../../../styles/main/colors.scss';
+
+.nav-menu {
+  height: 15vh;
+  display: flex;
+  &__links {
+    display: flex;
+    gap: 4.5rem;
+  }
+  &__burger {
+    display: flex;
+    align-items: center;
+  }
+  &__links a {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    color: $color-primary-blue;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  &__controls {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+  &__profile {
+    width: 100%;
+    height: 100%;
+  }
+}
+.nav-menu .wrapper {
+  background: rgba(255, 255, 255, 0.9);
+  max-width: 180rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 75em) {
+  .nav-menu__links {
+    gap: 2.5rem;
+  }
+}
+@media (max-width: 44em) {
+  .nav-menu {
+    &__links {
+      display: none;
+    }
+    &__controls {
+      flex-direction: row-reverse;
+      &-btn {
+        display: none !important;
+      }
+    }
+    &__burger,
+    &__burger--active {
+      .nav-menu__links {
+        display: flex;
+        flex-direction: column;
+      }
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(255, 255, 255, 0.8);
+      backdrop-filter: blur(10px);
+      z-index: 100;
+      top: 0;
+      transition: left 0.3s ease 0s;
+    }
+    &__burger--active {
+      left: 0;
+    }
+    &__burger {
+      left: -100%;
+    }
+  }
+}

@@ -1,0 +1,35 @@
+@import '../../../styles/main/colors.scss';
+
+.label {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 2.1rem;
+  // display: flex;
+  // flex-direction: column;
+  // gap: 3rem;
+  .input {
+    margin-top: 2rem;
+    display: block;
+    width: 100%;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 2.1rem;
+    color: #ababab;
+    background: $color-white;
+    border: 1px solid $color-primary-green;
+    border-radius: 16px;
+    padding: 3rem;
+  }
+  .warn {
+    color: red;
+    margin-left: 1.5rem;
+  }
+  .invalid {
+    border-color: red;
+  }
+  .textarea {
+    height: 20rem;
+  }
+}

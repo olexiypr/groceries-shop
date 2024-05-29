@@ -1,0 +1,141 @@
+@import '../../../../styles/main/colors.scss';
+
+.product {
+  z-index: 100;
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  padding: 11.5rem 0rem 14rem;
+  background-color: #fffafa;
+  animation-duration: 0.3s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  &__container {
+    position: relative;
+  }
+  &__details {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 9rem;
+    &-img {
+      width: 40rem;
+      height: 40rem;
+    }
+    &-info {
+      text-align: left;
+      .product-name {
+        font-weight: 600;
+        font-size: 4rem;
+      }
+      .product-paragraph {
+        max-width: 65rem;
+      }
+    }
+  }
+
+  &-title {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 47px;
+    color: #274c5b;
+  }
+
+  &-price {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.8rem;
+    color: #274c5b;
+    margin-bottom: 3.2rem;
+  }
+
+  &-discount {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    color: #b8b8b8;
+    text-decoration: line-through;
+    margin-right: 0.5rem;
+  }
+
+  &-paragraph {
+    margin-bottom: 3.2rem;
+    max-width: 65rem;
+  }
+
+  &__controls {
+    display: flex;
+    gap: 2rem;
+    &-btn {
+      padding: 0 3rem;
+    }
+  }
+  &__buttons {
+    max-width: 65rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 3rem;
+    transition: all 0.3s ease-in-out;
+    &--active {
+      transition: all 0.3s ease-in-out;
+      background: $color-primary-green-tint;
+      border: 1px solid #000000;
+      color: $color-primary-blue;
+      border-radius: 16px;
+      pointer-events: none;
+    }
+  }
+  &__description {
+    text-align: center;
+  }
+  &-close {
+    padding: 1rem 3rem;
+    position: absolute;
+    top: 0;
+    right: 3.5%;
+  }
+}
+
+@keyframes modal-enter {
+  0% {
+    opacity: 0;
+    transform: scale(0.9) translateY(-50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(-50%);
+  }
+}
+
+@keyframes modal-exit {
+  0% {
+    opacity: 1;
+    transform: translateY(-50%);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.9) translateY(-50%);
+  }
+}
+
+.modal-enter {
+  animation-name: modal-enter;
+}
+
+.modal-exit {
+  animation-name: modal-exit;
+}
+
+@media (max-width: 44em) {
+  .product__details-img {
+    display: none;
+  }
+}

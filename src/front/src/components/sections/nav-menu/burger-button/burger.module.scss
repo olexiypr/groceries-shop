@@ -1,0 +1,49 @@
+@import '../../../../styles/main/colors.scss';
+
+.burger {
+  width: 40px;
+  height: 30px;
+  display: none;
+  cursor: pointer;
+  position: relative;
+  z-index: 101;
+  background-color: #ffff;
+  & span,
+  &::before,
+  &::after {
+    content: '';
+    right: 0;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: $color-primary-blue;
+    transition: all 0.4s ease-in-out;
+  }
+  &::before {
+    top: 0px;
+  }
+  &::after {
+    bottom: 0px;
+  }
+  & span {
+    top: calc(50% - 1.5px);
+  }
+}
+.burger--active {
+  &::before {
+    top: calc(50% - 1.5px);
+    transform: rotate(45deg);
+  }
+  &::after {
+    bottom: calc(50% - 1.5px);
+    transform: rotate(-45deg);
+  }
+  & span {
+    width: 0;
+  }
+}
+@media (max-width: 44em) {
+  .burger {
+    display: block;
+  }
+}

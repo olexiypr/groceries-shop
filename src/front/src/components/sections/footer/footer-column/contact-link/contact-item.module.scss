@@ -1,0 +1,29 @@
+@import '../../../../../styles/main/colors.scss';
+
+.contact {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: flex-end;
+  &-label {
+    font-weight: 700;
+    &--hidden {
+      display: none;
+    }
+  }
+  &-link {
+    font-weight: 400;
+    color: $color-paragraph-gray;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+@media (max-width: 59em) {
+  .contact {
+    // flex-direction: row;
+    align-items: center;
+  }
+}

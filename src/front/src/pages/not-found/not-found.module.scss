@@ -1,0 +1,58 @@
+@import '../../styles/main/colors.scss';
+
+.not-found {
+  position: relative;
+  z-index: 10;
+  height: calc(100vh - 208px);
+  background-image: url('../../img/not-found-banner.png');
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  margin-bottom: 14.5rem;
+  overflow: hidden;
+  &__content {
+    text-align: center;
+    &-subheading {
+      color: #8fa8a8;
+      font-size: 30rem;
+      font-weight: 700;
+    }
+    &-heading {
+      font-size: 7rem;
+      max-width: 53rem;
+      margin-bottom: 2.3rem;
+    }
+    &-paragraph {
+      margin-bottom: 6rem;
+    }
+    &-btn {
+      margin: 0 auto;
+    }
+  }
+  &-decores {
+    position: absolute;
+    inset: 0;
+    left: -35rem;
+    top: 3rem;
+    z-index: -1;
+    width: 100%;
+  }
+}
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+@media (max-width: 44em) {
+  .wrapper {
+    align-items: center;
+  }
+  .not-found__content-subheading {
+    font-size: 20rem;
+    color: $color-white;
+  }
+}
